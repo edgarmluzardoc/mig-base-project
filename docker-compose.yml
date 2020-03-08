@@ -9,9 +9,9 @@ services:
             - ./code:/var/www/html
             - ./site.conf:/etc/nginx/conf.d/site.conf
         links:
-            - web
+            - php
 
-    web:
+    php:
         build:
             context: .
         container_name: mig-web
